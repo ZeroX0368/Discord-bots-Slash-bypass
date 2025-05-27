@@ -747,7 +747,7 @@ async function handleBypass(interaction) {
     await interaction.reply({ embeds: [processingEmbed] });
 
     try {
-        const apiUrl = `YOU API URL=${encodeURIComponent(url)}`;
+        const apiUrl = `https://api.solar-x.top/free/bypass?url=${encodeURIComponent(url)}`;
         
         const response = await fetch(apiUrl);
         const data = await response.json();
